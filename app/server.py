@@ -9,10 +9,20 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
+export_file_url = 'https://www.dropbox.com/s/ua956x2l0ammp22/export.pkl?dl=0'
 export_file_name = 'export.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['2 fori vuoti, stampa corretta',
+ 'due fori occlusi, scritta sbagliata',
+ 'due fori occlusi, stampa corretta',
+ 'due fori vuoti, stampa sbagliata',
+ 'foro dx vuoto, scritta giusta',
+ 'foro dx vuoto, scritta sbagliata',
+ 'foro sx fuori camera, scritta giusta',
+ 'foro sx vuoto, scritta giusta',
+ 'foro sx vuoto, scritta sbagliata',
+ 'no plexiglass',
+ 'plexiglass al contrario']
 path = Path(__file__).parent
 
 app = Starlette()
