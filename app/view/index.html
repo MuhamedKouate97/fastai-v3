@@ -7,11 +7,24 @@
 <body>
 <div>
   <div class='center'>
-    <div class='title'>Classify Bear Images 🐻</div>
+    <div class='title'>Classificatore Multi Classe Considi</div>
     <p>
-      Use images of <strong>teddy</strong> bears, <strong>black</strong> bears, <strong>grizzly</strong> bears, or
-      all three!
+      Il classificatore riconosce se l'immagine a quale classe appartiene l'immagine caricata.
     </p>
+    <h4> Le possibili classi sono: </h4>
+    <ul style="list-style-type:circle;">
+        <li>2 fori vuoti, stampa corretta</li>
+        <li>due fori occlusi, scritta sbagliata</li>
+        <li>due fori occlusi, stampa corretta</li>
+        <li>due fori vuoti, stampa sbagliata</li>
+        <li>foro dx vuoto, scritta giusta</li>
+        <li>foro dx vuoto, scritta sbagliata</li>
+        <li>foro sx fuori camera, scritta giusta</li>
+        <li>foro sx vuoto, scritta giusta</li>
+        <li>foro sx vuoto, scritta sbagliata</li>
+        <li>no plexiglass</li>
+        <li>plexiglass al contrario</li>
+    </ul>
     <div class='content'>
       <div class='no-display'>
         <input id='file-input'
